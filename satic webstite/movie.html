@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="t.css">
+</head>
+
+<body>
+    <div id="section1">
+        <div class="congtainer-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <a class="navbar-brand" href="#">
+                    <img src="https://res.cloudinary.com/dh2ggkenn/image/upload/v1711626407/ms_npwzyl.jpg" class="navImage" />
+                </a>
+                <h1>MovieSpeed</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link" href="#Telugu">Telugu</a>
+                        <a class="nav-link" href="#Tamil">Tamil</a>
+                        <a class="nav-link" href="#Hindhi">Hindi</a>
+                        <a class="nav-link" href="#English">English</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="carouselExampleIndicators" class="carousel slide caursol" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://static.toiimg.com/photo/95667975.cms" class="d-block d-md-none w-100 eh" alt="..." onclick="display('section2')">
+                        <img src="https://static.toiimg.com/photo/95667975.cms" class="d-md-block d-lg-none w-100 mh" alt="..." onclick="display('section2')">
+                        <img src="https://static.toiimg.com/photo/95667975.cms" class="d-md-none d-lg-block w-100 lh" alt="..." onclick="display('section2')">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://comicbookmovie.com/cdn-cgi/image/fit=cover,width=670,height=377,quality=75/https://comicbookmovie.com/images/articles/banners/209053.jpg" class="d-block d-md-none w-100 eh" alt="..." onclick="display('section3')">
+                        <img src="https://comicbookmovie.com/cdn-cgi/image/fit=cover,width=670,height=377,quality=75/https://comicbookmovie.com/images/articles/banners/209053.jpg" class="d-md-block d-lg-none w-100 mh" alt="..." onclick="display('section3')">
+                        <img src="https://comicbookmovie.com/cdn-cgi/image/fit=cover,width=670,height=377,quality=75/https://comicbookmovie.com/images/articles/banners/209053.jpg" class="d-md-none d-lg-block w-100 lh" alt="..." onclick="display('section3')">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/Raa.jpg?size=1200:675" class="d-block d-md-none w-100 eh" alt="..." onclick="display('section4')">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/Raa.jpg?size=1200:675" class="d-md-block d-lg-none w-100 mh" alt="..." onclick="display('section4')">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202107/Raa.jpg?size=1200:675" class="d-md-none d-lg-block w-100 lh" alt="..." onclick="display('section4')">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="i">
+                <div class="row">
+                    <div class="col-12" id="English">
+                        <h1><span>Hollywood</span> movies</h1>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-4 m">
+                        <img src="https://images.indianexpress.com/2023/05/nolan-movie.jpg?w=414" class="sssi" onclick="display('section5')"/>
+                        <p>open heimer</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-4 m">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgJkpNQgSzxZN_OZLe32i2wupIT_4FlaxOKC-k89z5Q&s" class="sssi" onclick="display('section6')"/>
+                        <p>Breaking Bad</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-4 m">
+                        <img src="https://i0.wp.com/www.thewrap.com/wp-content/uploads/2022/04/the-walking-dead-cast.jpg?fit=990%2C557&ssl=1" class="sssi" onclick="display('section7')"/>
+                        <p>Walking Dead</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-4 m">
+                        <img src="https://assets-in.bmscdn.com/discovery-catalog/events/et00379120-yepzmfxgpg-landscape.jpg" class="sssi" onclick="display('section8')"/>
+                        <p>Fight Club</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-4 m">
+                        <img src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1600041290961-QV53ZKSZMYB9IEIVJRMT/image-asset.jpeg" class="sssi" onclick="display('section9')"/>
+                        <p>Batman</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-4 m">
+                        <img src="https://communist.red/wp-content/uploads/2022/08/godfather.png.webp" class="sssi" onclick="display('section10')"/>
+                        <p>God Father</p>
+                    </div>
+                    <div class="col-12" id="Tamil">
+                        <h1><span>Kollywood</span> movies</h1>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSZrOGD4bnrkhgxVu9789osBuQvG-gtIGiHx1DeV5VkNtLxvBHlv4StMMGTncVSyD-ReyZRFtOSOmz0ahtwmpAW_Eydpi9MvHwzU.jpg?r=4e1" class="ssi" onclick="display('section11')"/>
+                        <p>LEO</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/10/full/1691651117-1462.png" class="ssi" onclick="display('section12')"/>
+                        <p>Jailer</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://img.nowrunning.com/content/movie/2022/vaath-26064/bg4.jpg" class="ssi" onclick="display('section13')"/>
+                        <p>sir</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://static.toiimg.com/thumb/msid-106581850,width-1280,height-720,resizemode-4/106581850.jpg" class="ssi" onclick="display('section14')"/>
+                        <p>Ayalaan</p>
+                    </div>
+                    <div class="col-12" id="Telugu">
+                        <h1><span>Tollywood</span> movies</h1>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 m">
+                        <img src="https://www.telugutimes.net/storage/gallery/cinema/wall-papers/guntur-karam-movie-posters/guntur-karam-movie-posters-1.jpg" class="si"  onclick="display('section15')"/>
+                        <h5>Guntur Karam</h5>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 m">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/kzygpzk0/poster/r/q/s/large-movie-bahubali-2-posters-on-large-print-36x24-inches-original-imagbukjsjtksjsg.jpeg?q=90&crop=false" class="si" onclick="display('section16')"/>
+                        <h5>Bahubali 2</h5>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 m">
+                        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/hi-nanna-et00364503-1701678655.jpg" class="si" onclick="display('section17')"/>
+                        <p>Hi nanna</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 m">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7LoGafHXCfwk7nXG-kBBwO35nsP7rmLB4uz4JXZ4drg&s" class="si" onclick="display('section18')"/>
+                        <p>Tiger Nageswara Rao</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 m">
+                        <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2020/04/08/Stylish-Star-Allu-Arjun-s-Pushpa-Movie-Second-Look-Poster-.jpg?fit=1365%2C2048&quality=80&zoom=1&ssl=1" class="si" onclick="display('section19')"/>
+                        <p>Puspa</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-2 m">
+                        <img src="https://m.media-amazon.com/images/M/MV5BOGEzYzcxYjAtZmZiNi00YzI0LWIyY2YtOTM0MDFjODU2YTZiXkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_.jpg" class="si" onclick="display('section20')"/>
+                        <p>RRR</p>
+                    </div>
+                    <div class="col-12" id="Hindhi">
+                        <h1><span>Bollywood</span> movies</h1>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://imageio.forbes.com/specials-images/imageserve/64dce4ae2398fc26f9d8ae21/Indian-actors-Akshay-Kumar-and-Pankaj-Tripathi-on-a-poster-of-the-Hindi-film--OMG-2--/0x0.jpg?format=jpg&crop=1110,624,x22,y0,safe&width=960" class="ssi" onclick="display('section21')"/>
+                        <p>OMG2</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://www.m9.news/wp-content/uploads/2024/02/Article-370-1.jpg" class="ssi"  onclick="display('section22')"/>
+                        <p>Article 370</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/25/full/1692959463-8999.png" class="ssi"  onclick="display('section23')"/>
+                        <p>Jawan</p>
+                    </div>
+                    <div class="col-4 col-md-3 col-lg-3 m">
+                        <img src="https://images.indianexpress.com/2024/01/Poster-of-Animal.jpeg" class="ssi"  onclick="display('section24')"/>
+                        <p class="text-center">Animal</p>
+                    </div>
+                    
+                    <div class="col-12">
+                        <h1 class="text-center">MovieSpeed</h1>
+                        <span>Follow us on</span>
+                        <div class="d-flex flex-row justify-content-center">
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-twitter icon"></i>
+                            <p>Twitter</p>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-instagram icon"></i>
+                            <p>Instagram</p>
+                        </div>
+                        <div class="follow-us-icon-container">
+                            <i class="fab fa-facebook icon"></i>
+                            <p>Facebook</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\hanu.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Dune_ Part Two _ Official Trailer 2.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section4">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Jai Bhim - Official Tamil Trailer _ Suriya _ Prakash Raj _ Sean Roldan _ Tha.Se. Gnanavel.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section5">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Oppenheimer _ New Trailer.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section6">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\El Camino_ A Breaking Bad Movie _ Official Trailer _ Netflix.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section7">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\The Walking Dead Trailer (First Season).mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section8">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Fight Club _ Modern Trailer (2020).mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section9">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\THE BATMAN – Main Trailer.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section10">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\THE GODFATHER _ 50th Anniversary Trailer _ Paramount Pictures.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section11">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\LEO - Official Trailer _ Thalapathy Vijay _ Lokesh Kanagaraj _ Anirudh Ravichander.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section12">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\JAILER - Official ShowCase _ Superstar Rajinikanth _ Sun Pictures _ Anirudh _ Nelson (1).mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section13">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Vaathi _ Official Trailer _ Dhanush, Samyuktha Menon _ Netflix India.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section14">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Ayalaan - Official Trailer _ Sivakarthikeyan _ A.R.Rahman _ Rakul Preet Singh _ R.Ravikumar (1).mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section15">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Guntur Kaaram _ Official trailer _ Mahesh Babu, Sreeleela, Ramya Krishnan, Prakash Raj, Jayaram.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section16">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Baahubali 2 - The Conclusion Trailer _ Prabhas, Rana Daggubati _ SS Rajamouli.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section17">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Hi Nanna - Official Trailer _ Nani _ Mrunal T _ Baby Kiara K_ Shouryuv _ Hesham Abdul Wahab.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section18">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Tiger Nageswara Rao Trailer - Telugu _ Ravi Teja _ Vamsee _ Anupam Kher _ Abhishek Agarwal.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section19">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Pushpa Official Trailer _ Allu Arjun _ Rashmika _ Fahadh Faasil _ Sukumar _ DSP _ 17th Dec.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section20">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\RRR Trailer (Telugu) - NTR, Ram Charan, Ajay Devgn, Alia Bhatt _ SS Rajamouli _ 25th March 2022.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section21">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\OMG2 - Official Trailer _ Akshay Kumar, Pankaj Tripathi, Yami Gautam _ Amit Rai _ In Theatres Aug 11.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section22">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Article 370 _ Official Trailer _ Now Streaming _ Yami Gautam Dhar, Priyamani _ Netflix India.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section23">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\Jawan _ Official Trailer _ Shah Rukh Khan, Vijay Sethupathi, Nayanthara, Deepika Padukone.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <div id="section24">
+        <div class="vi">
+            <video controls autoplay class="w-100 h">
+                <source src="C:\Users\Ganesh\Desktop\satic webstite\ANIMAL (OFFICIAL TRAILER)_ Ranbir Kapoor _ Rashmika M, Anil K, Bobby D _ Sandeep Vanga _ Bhushan K.mp4" type="video/mp4">
+            </video>
+            <a href="movie.html"><div class="text-center">
+                <button class="btn btn-danger"><i class="fa-solid fa-house mr-1"></i>Back</button>
+            </div></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
